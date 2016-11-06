@@ -190,3 +190,8 @@ h3#sb-bscmedieninformatik{
     font-size: 1.5rem;
   }
 }
+
+.hidden {
+  display:none;
+  visibility:hidden
+}

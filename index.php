@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Der Full-Stack Web-Entwickler Sven Bischoff stellt sich vor. Links zu seinen Blog und Lebenslauf, sowie den Profilen bei GitHub, Twitter, Facebook, Steam, XING und LinkedIn.">
   <link rel="author" href="humans.txt" />
+  <link rel="webmention" href="//bischoff.media/webmention.php">
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
   <style type="text/css" media="screen">
     <?php
       require_once('./assets/css/materialize.min.css');
@@ -16,11 +18,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 <body class="blue-grey darken-3 blue-grey-text text-lighten-4">
-  <div class="container">
+  <div class="container h-card">
     <div class="center-align">
-      <img src="./assets/img/sb.png" class="circle responsive-img sb-scp-portrait" alt="Foto von Sven Bischoff" title="Sven Bischoff"/>
-      <h1 id="sb-name"><span class="sb-scp-bold">Sven</span> <span class="sb-scp-light">Bischoff</span></h1>
-      <h2 id="sb-webdeveloper" class="sb-scp-light">Full-Stack Web-Entwickler</h2>
+      <img class="u-photo circle responsive-img sb-scp-portrait" alt="Foto von Sven Bischoff" src="./assets/img/sb.png" title="Sven Bischoff" />
+      <h1 id="sb-name" class="p-name"><span class="sb-scp-bold">Sven</span> <span class="sb-scp-light">Bischoff</span></h1>
+      <a href="https://bischoff.media" rel="me" class="hidden u-url">https://bischoff.media</a>
+      <h2 id="sb-webdeveloper" class="sb-scp-light p-note">Full-Stack Web-Entwickler</h2>
       <h3 id="sb-bscmedieninformatik"><span class="sb-scp-bold">B.Sc.</span> <span class="sb-scp-light">Medieninformatik</span></h3>
     </div>
     <div class="center-align">
@@ -34,11 +37,11 @@
     </div>
     <div class="center-align">
       <a href="https://500px.com/medienlampe" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-500px left"></span>500px</a>
-      <a href="http://www.last.fm/de/user/MultiGeneris" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-lastfm left"></span>LastFM</a>
+      <a href="https://www.last.fm/de/user/MultiGeneris" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-lastfm left"></span>LastFM</a>
       <a href="https://steamcommunity.com/id/multigeneris" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-steam left"></span>Steam</a>
     </div>
     <div class="center-align">
-      <a href="mailto:info@bischoff.media?subject=Kontakt" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-mail left"></span>E-Mail</a>
+      <a href="mailto:info@bischoff.media?subject=Kontakt" class="u-email waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-mail left"></span>E-Mail</a>
       <a href="https://www.xing.com/profile/Sven_Bischoff10" class="sb-scp-button waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-xing left"></span>XING</a>
       <a href="https://de.linkedin.com/in/svenbischoff" class="waves-effect waves-light btn blue-grey lighten-3 blue-grey-text text-darken-4" rel="me"><span class="sb-socicon socicon-linkedin left"></span>LinkedIn</a>
     </div>
