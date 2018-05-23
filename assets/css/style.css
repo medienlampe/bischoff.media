@@ -10,6 +10,12 @@ body{
   margin: 3rem 0 0 0;
 }
 
+a,
+a:active,
+a:visited {
+  color: #cfd8dc;
+}
+
 img {
   height: auto;
   max-width: 90%;
