@@ -4,9 +4,9 @@ body{
   text-align: center;
   word-spacing: .25rem;
   background: #37474f;
-  
+
   color: #cfd8dc;
-  
+
   margin: 3rem 0 0 0;
 }
 
@@ -19,7 +19,7 @@ a:visited {
 img {
   height: auto;
   max-width: 90%;
-  
+
   border: .25rem #fefefe solid;
   border-radius: 100%;
 }
@@ -48,6 +48,8 @@ strong {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   min-height: 1.75em;
   width: 100%;
 
@@ -75,7 +77,7 @@ a.external {
   margin-bottom: .5rem;
   padding: .25rem;
 
-  transition: background-color 125ms linear; 
+  transition: background-color 125ms linear;
 }
 
 a.external:focus {
