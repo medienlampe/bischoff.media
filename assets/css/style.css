@@ -10,6 +10,10 @@ body{
   margin: 3rem 0 0 0;
 }
 
+main {
+  padding-bottom: 3rem;
+}
+
 a,
 a:active,
 a:visited {
@@ -22,6 +26,10 @@ img.u-photo {
 
   border: .25rem #fefefe solid;
   border-radius: 100%;
+}
+
+img.codewars {
+  margin: 1rem 0;
 }
 
 h1, h2, h3 {
