@@ -2,6 +2,7 @@
 
 var CACHE = 'precache';
 var precacheFiles = [
+  '/',
   'index.html',
   'robots.txt',
   'humans.txt',
