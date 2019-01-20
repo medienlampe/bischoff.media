@@ -3,6 +3,8 @@
 var CACHE = 'precache';
 var precacheFiles = [
   'index.html',
+  'robots.txt',
+  'humans.txt',
   'assets/img/sb.png',
   'assets/css/style.min.css',
   'assets/css/fonts.min.css'
