@@ -3,14 +3,14 @@
     "lang": "de",
     "name": "Sven Bischoff | Full-Stack Web-Entwickler",
     "scope": "/",
-    "display": "browser",
+    "display": "fullscreen",
     "start_url": "https://bischoff.media/",
     "short_name": "bischoff.media",
-    "theme_color": "transparent",
+    "theme_color": "#37474f",
     "description":
         "Der Full-Stack Web-Entwickler Sven Bischoff stellt sich vor. Links zu seinen Blog und Lebenslauf, sowie den Profilen bei GitHub, Twitter, Facebook, Steam, XING und LinkedIn.",
     "orientation": "any",
-    "background_color": "transparent",
+    "background_color": "#37474f",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": [
