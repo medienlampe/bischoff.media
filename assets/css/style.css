@@ -64,7 +64,6 @@ strong {
 }
 
 footer {
-  width: 100vw;
   line-height: 2.5em;
   font-size: 1rem;
   background: #263238;
@@ -81,7 +80,7 @@ a.external {
     0 0.125rem 0.3rem 0 rgba(0, 0, 0, 0.12);
 
   width: 12rem;
-  margin: 0.125rem;
+  margin: 0.5rem 0.125rem;
   padding: 0.5rem;
 
   transition: background-color 125ms linear;
