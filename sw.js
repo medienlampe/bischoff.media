@@ -4,6 +4,7 @@ var CACHE = 'precache';
 var precacheFiles = [
   '/',
   'index.html',
+  'english.html',
   'robots.txt',
   'humans.txt',
   'assets/img/sb.png',
