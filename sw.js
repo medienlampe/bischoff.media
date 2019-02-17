@@ -8,6 +8,7 @@ var precacheFiles = [
   "robots.txt",
   "humans.txt",
   "assets/img/sb.jpg",
+  "assets/img/favicon.png",
   "assets/css/style.min.css",
   "assets/css/fonts.min.css"
 ];
