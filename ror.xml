@@ -6,10 +6,18 @@
 
 <item>
      <link>https://bischoff.media/</link>
-     <title>Sven Bischoff || Full-Stack Web-Entwickler</title>
-     <description>Der Full-Stack Web-Entwickler Sven Bischoff stellt sich vor. Informationen und Links zu seinem Blog, GitHub, Twitter, Facebook, XING und LinkedIn.</description>
+     <title>Sven Bischoff | Full-Stack Web-Entwickler</title>
+     <description>Der Full-Stack Web-Entwickler Sven Bischoff stellt sich vor. Links zu seinen Blog und Lebenslauf, sowie seinen Socialmedia Profilen.</description>
      <ror:updatePeriod>monthly</ror:updatePeriod>
      <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://bischoff.media/</link>
+     <title>Sven Bischoff | Sven Bischoff | Full-Stack Developer</title>
+     <description>The personal web profile of the full-stack developer Sven Bischoff including profile links for his social media.</description>
+     <ror:updatePeriod>monthly</ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
      <ror:resourceOf>sitemap</ror:resourceOf>
 </item>
 </channel>
