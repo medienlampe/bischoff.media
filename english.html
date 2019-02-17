@@ -1,67 +1,187 @@
 <!DOCTYPE html>
 <html lang="en" data-version="##VersionHash##">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="https://bischoff.media/">
-  <link rel="stylesheet" href="./assets/css/fonts.min.css" media="none" onload="if(media!='all')media='all'">
-  <noscript><link rel="stylesheet" href="./assets/css/fonts.min.css"></noscript>
-  <link rel="stylesheet" href="./assets/css/style.min.css" media="none" onload="if(media!='all')media='all'">
-  <noscript><link rel="stylesheet" href="./assets/css/style.min.css"></noscript>
-  <link rel="author" href="./humans.txt">
-  <meta name="description" content="The personal web profile of the full-stack developer Sven Bischoff including profile links for GitHub, Twitter, Facebook, Steam, XING and LinkedIn.">
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <title>Sven Bischoff | Full-Stack Developer</title>
-  <meta name="theme-color" content="#37474f"/>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <!--<a href="#main">Zum Hauptinhalt springen</a>-->
-  <main id="main" class="h-card">
-    <h1 class="p-name"><strong>Sven</strong> Bischoff</h1>
-    <h2 class="p-note"><strong>Full-Stack Developer</strong> from Leipzig</h2>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="https://bischoff.media/" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/fonts.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./assets/css/fonts.min.css"
+    /></noscript>
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./assets/css/style.min.css"
+    /></noscript>
+    <link rel="author" href="./humans.txt" />
+    <meta
+      name="description"
+      content="The personal web profile of the full-stack developer Sven Bischoff including profile links for his social media."
+    />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <title>Sven Bischoff | Full-Stack Developer</title>
+    <meta name="theme-color" content="#37474f" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <!--<a href="#main">Zum Hauptinhalt springen</a>-->
+    <main id="main" class="h-card">
+      <h1 class="p-name"><strong>Sven</strong> Bischoff</h1>
+      <h2 class="p-note"><strong>Full-Stack Developer</strong> from Leipzig</h2>
 
-    <img class="u-photo" alt="Photo of Sven Bischoff" src="./assets/img/sb.png" title="Sven Bischoff" />
-    <section id="welcome">
-    <a href="https://bischoff.media" rel="me noopener noreferrer" class="u-url hidden">https://bischoff.media</a>
-      <p>
-        Currently I'm working as Lead Software Engineer at <a href="https://www.invia.de" rel="noopener noreferrer">Invia Travel Germany GmbH</a> on the e-commerce travel platform <a href="https://www.ab-in-den-urlaub.de" rel="noopener noreferrer">ab-in-den-urlaub.de</a> and several more.
-      </p>
-      <p>
-        Apart from that I'm quite interested in photography, music, science and DIY. I also like to research topics I'm interested in and am a <span class="p-honorific-suffix"><strong>B.Sc.</strong> Medieninformatik</span>.
-      </p>
-    </section>
-    <section id="linked-profiles">
-      <a href="https://github.com/medienlampe" class="external" rel="me noopener noreferrer"><span class="socicon github"></span>GitHub</a>
-      <a href="https://bischoff.photo" class="external" rel="me noopener noreferrer"><span class="socicon photo left"></span>Photography</a>
-      <a href="https://blog.bischoff.media" class="external" rel="me noopener noreferrer">Blog</a>
-      <a href="https://www.thingiverse.com/medienlampe" class="external" rel="me noopener noreferrer">Thingiverse</a>
-      <a href="https://twitter.com/TheTalesOfImmo" class="external" rel="me noopener noreferrer"><span class="socicon twitter"></span>Twitter</a>
-      <a href="https://www.xing.com/profile/Sven_Bischoff10" class="external" rel="me noopener noreferrer"><span class="socicon xing"></span>XING</a>
-      <a href="https://de.linkedin.com/in/svenbischoff" class="external" rel="me noopener noreferrer"><span class="socicon linkedin"></span>LinkedIn</a>
-      <a href="https://steamcommunity.com/id/multigeneris" class="external" rel="me noopener noreferrer"><span class="socicon steam left"></span>Steam</a>
-      <a href="mailto:info@bischoff.media?subject=Kontakt" class="u-email external" rel="me noopener noreferrer"><span class="socicon mail"></span>E-Mail</a>
-    </section>
-  </main>
-  <footer>
-    <div class="legal">
-      Imprint || Sven Bischoff | Arnoldstraße 2 | 04299 Leipzig || <a href="https://legal.bischoff.media">Privacy</a>
-    </div>
-    <div class="language">
-      <a href="./"><span class="visually-hidden">Switch language to </span>German</a> | <strong><span class="visually-hidden">Current language: </span>English</strong>
-    </div>
-  </footer>
-  <script>
-    if (navigator.serviceWorker 
-      && navigator.serviceWorker.register 
-      && !navigator.serviceWorker.controller
-    ) {
-      navigator.serviceWorker.register('sw.js', {
-        scope: './'
-      })/*.then(function(reg) {
+      <img
+        class="u-photo"
+        alt="Photo of Sven Bischoff"
+        src="./assets/img/sb.jpg"
+        title="Sven Bischoff"
+      />
+      <section id="welcome">
+        <a
+          href="https://bischoff.media"
+          rel="me noopener noreferrer"
+          class="u-url hidden"
+          >https://bischoff.media</a
+        >
+        <p>
+          Currently I'm working as Lead Software Engineer at
+          <a
+            href="https://www.invia.de"
+            title="Invia Group Germany - the employer of Sven Bischoff"
+            rel="noopener noreferrer"
+            >Invia Travel Germany GmbH</a
+          >
+          on the e-commerce travel platform
+          <a
+            href="https://www.ab-in-den-urlaub.de"
+            title="Ab-in-den-Urlaub.de - one of the products Sven Bischoff is working on at the moment"
+            rel="noopener noreferrer"
+            >ab-in-den-urlaub.de</a
+          >
+          and several more.
+        </p>
+        <p>
+          My fascination for the web and its underlying technology started more
+          than ten years ago and hasn't left me since. I really enjoy the design
+          and creation process of web applications and their contents. This
+          doesn't end by just deploying them. A web application is more than
+          it's code, it's a webserver, an operating system, a hardware stack and
+          also includes automation, backups, virtualization and containers.
+          Every part of that is interesting and amazing on it's own and all are
+          working together for a great experience.
+        </p>
+        <p>
+          Apart from that I'm quite interested in photography, music, science
+          and DIY. I also like to research topics I'm interested in and am a
+          <span class="p-honorific-suffix"
+            ><strong>B.Sc.</strong> Medieninformatik</span
+          >.
+        </p>
+      </section>
+      <section id="linked-profiles">
+        <a
+          href="https://github.com/medienlampe"
+          title="Sven Bischoff and his code on GitHub"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon github"></span>GitHub</a
+        >
+        <a
+          href="https://bischoff.photo"
+          title="A web gallery containing some of the photography of Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon photo left"></span>Photography</a
+        >
+        <a
+          href="https://blog.bischoff.media"
+          title="The blog of Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          >Blog</a
+        >
+        <a
+          href="https://www.thingiverse.com/medienlampe"
+          title="Sven Bischoff and some of his 3d designs on Thingiverse"
+          class="external"
+          rel="me noopener noreferrer"
+          >Thingiverse</a
+        >
+        <a
+          href="https://twitter.com/TheTalesOfImmo"
+          title="Sven Bischoff on Twitter"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon twitter"></span>Twitter</a
+        >
+        <a
+          href="https://www.xing.com/profile/Sven_Bischoff10"
+          title="Sven Bischoff on XING"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon xing"></span>XING</a
+        >
+        <a
+          href="https://de.linkedin.com/in/svenbischoff"
+          title="Sven Bischoff on LinkedIn"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon linkedin"></span>LinkedIn</a
+        >
+        <a
+          href="https://steamcommunity.com/id/multigeneris"
+          title="Sven Bischoff on Steam"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon steam left"></span>Steam</a
+        >
+        <a
+          href="mailto:info@bischoff.media?subject=Kontakt"
+          title="Contact Sven Bischoff via e-mail"
+          class="u-email external"
+          rel="me noopener noreferrer"
+          ><span class="socicon mail"></span>E-Mail</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="legal">
+        Imprint || Sven Bischoff | Arnoldstraße 2 | 04299 Leipzig ||
+        <a href="https://legal.bischoff.media" title="Privacy agreement"
+          >Privacy</a
+        >
+      </div>
+      <div class="language">
+        <a href="./" title="View this page in German"
+          ><span class="visually-hidden">Switch language to </span>German</a
+        >
+        |
+        <strong
+          ><span class="visually-hidden">Current language: </span
+          >English</strong
+        >
+      </div>
+    </footer>
+    <script>
+      if (
+        navigator.serviceWorker &&
+        navigator.serviceWorker.register &&
+        !navigator.serviceWorker.controller
+      ) {
+        navigator.serviceWorker.register("sw.js", {
+          scope: "./"
+        }) /*.then(function(reg) {
         console.log('Service worker has been registered for scope:'+ reg.scope);
       })*/;
-    }
-  </script>
+      }
+    </script>
   </body>
 </html>

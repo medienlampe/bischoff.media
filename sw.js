@@ -1,19 +1,19 @@
 //This is the service worker with the Cache-first network
 
-var CACHE = 'precache';
+var CACHE = "precache";
 var precacheFiles = [
-  '/',
-  'index.html',
-  'english.html',
-  'robots.txt',
-  'humans.txt',
-  'assets/img/sb.png',
-  'assets/css/style.min.css',
-  'assets/css/fonts.min.css'
+  "/",
+  "index.html",
+  "english.html",
+  "robots.txt",
+  "humans.txt",
+  "assets/img/sb.jpg",
+  "assets/css/style.min.css",
+  "assets/css/fonts.min.css"
 ];
 
 //Install stage sets up the cache-array to configure pre-cache content
-self.addEventListener('install', function(evt) {
+self.addEventListener("install", function(evt) {
   evt.waitUntil(
     precache().then(function() {
       return self.skipWaiting();
@@ -22,11 +22,11 @@ self.addEventListener('install', function(evt) {
 });
 
 //allow sw to control of current page
-self.addEventListener('activate', function(event) {
+self.addEventListener("activate", function(event) {
   return self.clients.claim();
 });
 
-self.addEventListener('fetch', function(evt) {
+self.addEventListener("fetch", function(evt) {
   evt.respondWith(fromCache(evt.request).catch(fromServer(evt.request)));
   evt.waitUntil(update(evt.request));
 });
@@ -41,7 +41,7 @@ function fromCache(request) {
   //we pull files from the cache first thing so we can show them fast
   return caches.open(CACHE).then(function(cache) {
     return cache.match(request).then(function(matching) {
-      return matching || Promise.reject('no-match');
+      return matching || Promise.reject("no-match");
     });
   });
 }
