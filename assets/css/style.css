@@ -89,7 +89,7 @@ strong {
 footer {
   line-height: 2.5em;
   font-size: 1rem;
-  background: #0c1012;
+  background: #182024;
 }
 
 a.external {
@@ -98,7 +98,7 @@ a.external {
   font-size: 1.25rem;
   text-decoration: none;
   background: #b0bec5;
-  color: #0c1012;
+  color: #182024;
   box-shadow: 0 0.125rem 0.3rem 0 rgba(0, 0, 0, 0.16),
     0 0.125rem 0.3rem 0 rgba(0, 0, 0, 0.12);
 
@@ -110,7 +110,7 @@ a.external {
 }
 
 a.external:focus {
-  outline: 0.125rem #37474f solid;
+  outline: 0.125rem #182024 solid;
   outline-offset: -0.25rem;
 }
 
@@ -137,7 +137,7 @@ a.external span.socicon {
 }
 
 #welcome {
-  color: #0c1012;
+  color: #182024;
   font-weight: 400;
   font-size: 1.5rem;
   background: #b0bec5;
