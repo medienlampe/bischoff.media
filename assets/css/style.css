@@ -5,7 +5,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Source Code Pro2", Arial, sans-serif;
+  font-family: "Source Code Pro", Arial, sans-serif;
+  font-display: auto;
   font-weight: 300;
   text-align: center;
   word-spacing: 0.25rem;
