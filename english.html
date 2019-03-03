@@ -5,23 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="https://bischoff.media/" />
     <link
-      rel="stylesheet"
-      href="./assets/css/fonts.min.css"
-      media="none"
-      onload="if(media!='all')media='all'"
+      rel="preload"
+      href="./assets/css/app.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript
-      ><link rel="stylesheet" href="./assets/css/fonts.min.css"
+      ><link rel="stylesheet" href="./assets/css/app.min.css"
     /></noscript>
-    <link
-      rel="stylesheet"
-      href="./assets/css/style.min.css"
-      media="none"
-      onload="if(media!='all')media='all'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="./assets/css/style.min.css"
-    /></noscript>
+    <script src="./assets/js/loadCSS.min.js" async defer></script>
     <link rel="author" href="./humans.txt" />
     <meta
       name="description"
@@ -43,7 +35,6 @@
         class="u-photo"
         alt="Photo of Sven Bischoff"
         src="./assets/img/sb.jpg"
-        title="Sven Bischoff"
       />
       <section id="welcome">
         <a
