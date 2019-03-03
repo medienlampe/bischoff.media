@@ -9,8 +9,7 @@ var precacheFiles = [
   "humans.txt",
   "assets/img/sb.jpg",
   "assets/img/favicon.png",
-  "assets/css/style.min.css",
-  "assets/css/fonts.min.css"
+  "assets/css/app.min.css"
 ];
 
 //Install stage sets up the cache-array to configure pre-cache content
