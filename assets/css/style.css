@@ -138,6 +138,7 @@ a.external span.socicon {
 }
 
 #welcome {
+  text-align: left;
   color: #182024;
   font-weight: 400;
   font-size: 1.5rem;
@@ -146,8 +147,7 @@ a.external span.socicon {
   padding: 19rem 0 3rem;
 }
 
-#welcome {
-  text-align: left;
+#welcome p {
   max-width: 60rem;
   margin: 1rem auto;
   padding: 0 2rem;
