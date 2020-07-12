@@ -1,6 +1,14 @@
 !_site/
 _site/*
 !_site/.htaccess
+!_site/humans.txt
+!_site/manifest.json
+!_site/robots.txt
+!_site/ror.xml
+!_site/sitemap.xml
+!_site/sitemap.xml.gz
+!_site/sw.js
+!_site/urllist.txt
 !_site/assets/
 
 _site/assets/*

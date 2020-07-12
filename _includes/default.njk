@@ -4,10 +4,9 @@
   <body>
     <!--<a href="#main">Zum Hauptinhalt springen</a>-->
     <main id="main" class="h-card">
-      <h1 class="p-note">{{ heading }}</h1>
+      <h1 class="p-note">{{ note | safe }}</h1>
       <h2 class="p-name">
-        <strong>Sven</strong> Bischoff - <strong>Softwareentwickler</strong> aus
-        Leipzig
+        {{ name | safe}}
       </h2>
       <a href="/" title="Zurück zur Hauptseite"
         ><img
@@ -17,24 +16,9 @@
       /></a>
       <section id="welcome">
         {{ content | safe }}
+      </section>
     </main>
-    <footer>
-      <div class="legal-language">
-        <a href="./impressum.html" title="Impressum">Impressum</a>
-        |
-        <span class="visually-hidden">Aktuelle Seite: </span
-        ><strong>Datenschutz</strong>
-        |
-        <a href="./index.html" title="Hauptseite auf Deutsch besuchen"
-          ><span class="visually-hidden">Hauptseite besuchen in: </span
-          >Deutsch</a
-        >
-        |
-        <a href="./english.html" title="Visit home page in english"
-          ><span class="visually-hidden">Visit home page in: </span>English</a
-        >
-      </div>
-    </footer>
+    {% include "templates/footer.njk" %}
     <script>
       navigator.serviceWorker &&
         navigator.serviceWorker.register &&
