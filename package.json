@@ -1,0 +1,28 @@
+{
+  "name": "bischoff.media",
+  "version": "2.0.0",
+  "description": "bischoff.media",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-sass": "^4.0.2",
+    "jest": "^26.1.0"
+  },
+  "scripts": {
+    "start": "gulp watch & eleventy --serve",
+    "build": "gulp && eleventy",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medienlampe/bischoff.media.git"
+  },
+  "author": "Sven Bischoff",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medienlampe/bischoff.media/issues"
+  },
+  "homepage": "https://github.com/medienlampe/bischoff.media#readme"
+}
