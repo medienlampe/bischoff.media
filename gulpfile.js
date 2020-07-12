@@ -8,13 +8,13 @@ const sass = require("gulp-sass");
  */
 gulp.task("css", function() {
   return gulp
-    .src("./_scss/style.scss")
+    .src("./_scss/app.scss")
     .pipe(
       sass({
         outputStyle: "compressed"
       }).on("error", sass.logError)
     )
-    .pipe(gulp.dest("./_site/assets"));
+    .pipe(gulp.dest("./_site/assets/css"));
 });
 
 /**

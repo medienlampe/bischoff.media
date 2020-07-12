@@ -1,16 +1,15 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <base href="https://bischoff.media/" />
   <link
     rel="preload"
-    href="./assets/css/app.min.css"
+    href="./assets/css/app.css"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
   />
-  <noscript
-    ><link rel="stylesheet" href="./assets/css/app.min.css"
-  /></noscript>
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="./assets/app.css" />
+  </noscript>
   <script>
     (function(t) {
       "use strict";
@@ -81,6 +80,6 @@
   <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
   <title>{{ site.title }}</title>
   <meta name="theme-color" content="#37474f" />
-  <link rel="manifest" href="manifest.json" />
+  <link rel="manifest" href="./manifest.json" />
   <link rel="shortcut icon" href="./assets/img/favicon.png" />
 </head>
