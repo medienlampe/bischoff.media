@@ -1,0 +1,13 @@
+{% set navPages = navPages %}
+<footer>
+  <div class="legal-language">
+  {%- for entry in navPages %}
+    {% if entry.url == page.url %}
+      <strong>{{ entry.title }}</strong>
+    {% else %}
+      <a href="{{ entry.url }}" title="{{ entry.title }}">{{ entry.title }}</a>
+    {% endif %}
+    {% if not loop.last %} | {% endif %}
+  {%- endfor %}
+  </div>
+</footer>
