@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="de" data-version="##VersionHash##">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <base href="https://bischoff.media/" />
+    <link
+      rel="preload"
+      href="./assets/css/app.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./assets/css/app.min.css"
+    /></noscript>
+    <script>
+      (function(t) {
+        "use strict";
+        t.loadCSS || (t.loadCSS = function() {});
+        var e = (loadCSS.relpreload = {});
+        if (
+          ((e.support = (function() {
+            var e;
+            try {
+              e = t.document.createElement("link").relList.supports("preload");
+            } catch (t) {
+              e = !1;
+            }
+            return function() {
+              return e;
+            };
+          })()),
+          (e.bindMediaToggle = function(t) {
+            function e() {
+              t.addEventListener
+                ? t.removeEventListener("load", e)
+                : t.attachEvent && t.detachEvent("onload", e),
+                t.setAttribute("onload", null),
+                (t.media = a);
+            }
+            var a = t.media || "all";
+            t.addEventListener
+              ? t.addEventListener("load", e)
+              : t.attachEvent && t.attachEvent("onload", e),
+              setTimeout(function() {
+                (t.rel = "stylesheet"), (t.media = "only x");
+              }),
+              setTimeout(e, 3e3);
+          }),
+          (e.poly = function() {
+            if (!e.support())
+              for (
+                var a = t.document.getElementsByTagName("link"), n = 0;
+                n < a.length;
+                n++
+              ) {
+                var o = a[n];
+                "preload" !== o.rel ||
+                  "style" !== o.getAttribute("as") ||
+                  o.getAttribute("data-loadcss") ||
+                  (o.setAttribute("data-loadcss", !0), e.bindMediaToggle(o));
+              }
+          }),
+          !e.support())
+        ) {
+          e.poly();
+          var a = t.setInterval(e.poly, 500);
+          t.addEventListener
+            ? t.addEventListener("load", function() {
+                e.poly(), t.clearInterval(a);
+              })
+            : t.attachEvent &&
+              t.attachEvent("onload", function() {
+                e.poly(), t.clearInterval(a);
+              });
+        }
+        "undefined" != typeof exports
+          ? (exports.loadCSS = loadCSS)
+          : (t.loadCSS = loadCSS);
+      })("undefined" != typeof global ? global : this);
+    </script>
+    <link rel="author" href="./humans.txt" />
+    <meta
+      name="description"
+      content="Der Full-Stack Web-Entwickler Sven Bischoff stellt sich vor. Links zu seinen Blog und Lebenslauf, sowie seinen Socialmedia Profilen."
+    />
+    <link rel="webmention" href="webmention.php" />
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+    <title>Sven Bischoff | Full-Stack Web-Entwickler</title>
+    <meta name="theme-color" content="#37474f" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+  </head>
+  <body>
+    <!--<a href="#main">Zum Hauptinhalt springen</a>-->
+    <main id="main" class="h-card">
+      <h1 class="p-name"><strong>Sven</strong> Bischoff</h1>
+      <h2 class="p-note"><strong>Softwareentwickler</strong> aus Leipzig</h2>
+      <img
+        class="u-photo"
+        alt="Foto von Sven Bischoff"
+        src="./assets/img/sb.jpg"
+      />
+      <section id="welcome">
+        <a
+          href="https://bischoff.media"
+          rel="me noopener noreferrer"
+          class="u-url hidden"
+          >https://bischoff.media</a
+        >
+        <p>
+          Aktuell arbeite ich als leitender Softwareentwickler für die
+          <a
+            href="https://www.invia.de"
+            title="Webseite der Invia Group - des Arbeitsgebers von Sven Bischoff."
+            rel="noopener noreferrer"
+            >Invia Travel Germany GmbH</a
+          >
+          an
+          <a
+            href="https://www.ab-in-den-urlaub.de"
+            title="Ab-in-den-Urlaub.de - eine der Webseiten an denen Sven Bischoff arbeitet"
+            rel="noopener noreferrer"
+            >ab-in-den-urlaub.de</a
+          >
+          und verschiedenen anderen Reiseportalen.
+        </p>
+        <p>
+          Meine Faszination für Webentwicklung begann vor über zehn Jahren und
+          hat mich seitdem nicht verlassen. Ob beruflich oder in der Freizeit;
+          ich genieße das Gestalten und Erstellen von Webseiten, deren Inhalten,
+          Designs und Technologien. Doch endet dies nicht beim Deployment,
+          sondern erstreckt sich vom Code, über den Webserver, das
+          darunterliegende Betriebssystem bis hinunter auf die Hardware und
+          umfasst auch Automatisierung, Backups sowie Virtualisierung und
+          Container.
+        </p>
+        <p>
+          Daneben interessiere ich mich für Fotografie, Musik, Wissenschaft,
+          Do-It-Yourself, recherchiere gern Dinge, die mich reizen und habe
+          einen Abschluss als
+          <span class="p-honorific-suffix"
+            ><strong>B.Sc.</strong> Medieninformatik</span
+          >.
+        </p>
+      </section>
+      <section id="linked-profiles">
+        <a
+          href="https://github.com/medienlampe"
+          title="GitHub-Profil von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon github"></span>GitHub</a
+        >
+        <a
+          href="https://bischoff.photo"
+          title="Webseite mit Fotografien von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon photo left"></span>Fotografie</a
+        >
+        <a
+          href="https://blog.bischoff.media"
+          title="Englischsprachiger Blog von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          >Blog</a
+        >
+        <a
+          href="https://www.thingiverse.com/medienlampe"
+          title="Thingiverse-Profil von Sven Bischoff mit Modellen für den 3D-Druck"
+          class="external"
+          rel="me noopener noreferrer"
+          >Thingiverse</a
+        >
+        <a
+          href="https://twitter.com/TheTalesOfImmo"
+          title="Twitter-Profil von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon twitter"></span>Twitter</a
+        >
+        <a
+          href="https://www.xing.com/profile/Sven_Bischoff10"
+          title="XING-Profil von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon xing"></span>XING</a
+        >
+        <a
+          href="https://de.linkedin.com/in/svenbischoff"
+          title="LinkedIn-Profil von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon linkedin"></span>LinkedIn</a
+        >
+        <a
+          href="https://steamcommunity.com/id/multigeneris"
+          title="Steam-Profil von Sven Bischoff"
+          class="external"
+          rel="me noopener noreferrer"
+          ><span class="socicon steam left"></span>Steam</a
+        >
+        <a
+          href="mailto:info@bischoff.media?subject=Kontakt"
+          title="Kontaktiere Sven Bischoff via E-Mail"
+          class="u-email external"
+          rel="me noopener noreferrer"
+          ><span class="socicon mail"></span>E-Mail</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="legal-language">
+        <a href="./impressum.html" title="Impressum">Impressum</a>
+        |
+        <a href="./datenschutz.html" title="Datenschutzerklärung"
+          >Datenschutz</a
+        >
+        |
+        <strong
+          ><span class="visually-hidden">Aktuelle Sprache: </span
+          >Deutsch</strong
+        >
+        |
+        <a href="./english.html" title="English version of this website"
+          ><span class="visually-hidden">Sprache wechseln zu: </span>Englisch</a
+        >
+      </div>
+    </footer>
+    <script>
+      navigator.serviceWorker &&
+        navigator.serviceWorker.register &&
+        !navigator.serviceWorker.controller &&
+        navigator.serviceWorker.register("sw.js", { scope: "./" });
+    </script>
+  </body>
+</html>
