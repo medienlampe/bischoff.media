@@ -1,0 +1,23 @@
+[
+  
+  {
+    "key": "Impressum",
+    "url": "/impressum.html",
+    "title": "Legal"
+  },
+  {
+    "key": "Datenschutz",
+    "url": "/datenschutz.html",
+    "title": "Privacy"
+  },
+  {
+    "key": "Deutsch",
+    "url": "/",
+    "title": "German"
+  },
+  {
+    "key": "English",
+    "url": "/english.html",
+    "title": "English"
+  }
+]
