@@ -1,24 +1,24 @@
-!_site/
-_site/*
-!_site/.htaccess
-!_site/humans.txt
-!_site/manifest.json
-!_site/robots.txt
-!_site/ror.xml
-!_site/sitemap.xml
-!_site/sitemap.xml.gz
-!_site/sw.js
-!_site/urllist.txt
-!_site/assets/
+!dist/
+dist/*
+!dist/.htaccess
+!dist/humans.txt
+!dist/manifest.json
+!dist/robots.txt
+!dist/ror.xml
+!dist/sitemap.xml
+!dist/sitemap.xml.gz
+!dist/sw.js
+!dist/urllist.txt
+!dist/assets/
 
-_site/assets/*
-!_site/assets/pwa/
-!_site/assets/js/
-!_site/assets/img/
-!_site/assets/css/
+dist/assets/*
+!dist/assets/pwa/
+!dist/assets/js/
+!dist/assets/img/
+!dist/assets/css/
 
-_site/assets/css/*
-!_site/assets/css/.keep
+dist/assets/css/*
+!dist/assets/css/.keep
 
 .DS_Store
 .sass-cache

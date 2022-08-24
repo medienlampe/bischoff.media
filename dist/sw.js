@@ -14,7 +14,7 @@
 // Names of the two caches used in this version of the service worker.
 // Change to v2, etc. when you update any of the local resources, which will
 // in turn trigger the install event again.
-var PRECACHE = 'precache-v3';
+var PRECACHE = 'precache-v4';
 var RUNTIME = 'runtime';
 
 // A list of local resources we always want to be cached.
@@ -24,7 +24,7 @@ var PRECACHE_URLS = [
   "english.html",
   "robots.txt",
   "humans.txt",
-  "assets/img/sb.jpg",
+  "assets/img/sb.webp",
   "assets/img/favicon.png",
   "assets/css/app.min.css"
 ];

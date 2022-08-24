@@ -39,10 +39,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-a.external .socicon.vita:before {
-  content: "\e062";
-}
-
 a.external .socicon.mail:before {
   content: "\e050";
 }
@@ -59,28 +55,12 @@ a.external .socicon.twitter:before {
   content: "\e08d";
 }
 
-a.external .socicon.facebook:before {
-  content: "\e028";
-}
-
 a.external .socicon.linkedin:before {
   content: "\e04c";
 }
 
 a.external .socicon.xing:before {
   content: "\e09f";
-}
-
-a.external .socicon.lastfm:before {
-  content: "\04a";
-}
-
-a.external .socicon.fivehundredpx:before {
-  content: "\e000";
-}
-
-a.external .socicon.blog:before {
-  content: "\e09c";
 }
 
 a.external .socicon.photo:before {

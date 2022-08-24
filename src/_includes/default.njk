@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="de">
-  {% include "templates/header.en.njk" %}
+  {% include "templates/header.njk" %}
   <body>
-    <!--<a href="#main">Jump to main content</a>-->
+    <!--<a href="#main">Zum Hauptinhalt springen</a>-->
     <main id="main" class="h-card">
       <h1 class="p-note">{{ note | safe }}</h1>
       <h2 class="p-name">
         {{ name | safe}}
       </h2>
-      <a href="/" title="Go to homepage">
-        <img
+      <a href="/" title="Zurück zur Hauptseite"
+        ><img
           class="u-photo"
-          alt="Photo of Sven Bischoff"
-          src="./assets/img/sb.jpg"
-        />
-      </a>
+          width="500"
+          height="500"
+          alt="Foto von Sven Bischoff"
+          src="./assets/img/sb.webp"
+      /></a>
       <section id="welcome">
         {{ content | safe }}
       </section>
     </main>
-    {% include "templates/footer.en.njk" %}
+    {% include "templates/footer.njk" %}
     <script>
       navigator.serviceWorker &&
         navigator.serviceWorker.register &&

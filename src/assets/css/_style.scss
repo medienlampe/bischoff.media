@@ -55,10 +55,6 @@ img.u-photo {
   );
 }
 
-img.codewars {
-  margin: 1rem 0;
-}
-
 h1,
 h2,
 h3 {
@@ -129,6 +125,7 @@ a.external span.socicon {
   visibility: hidden;
 }
 
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -136,6 +133,7 @@ a.external span.socicon {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
+*/
 
 #welcome {
   color: #182024;
@@ -155,9 +153,4 @@ a.external span.socicon {
 
 #linked-profiles {
   padding: 3rem 0;
-}
-
-
-.link-current {
-  font-weight: bold;
 }
