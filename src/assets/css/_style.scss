@@ -5,7 +5,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Source Code Pro", Arial, sans-serif;
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";;
   font-display: auto;
   font-weight: 300;
   text-align: center;
@@ -98,11 +98,9 @@ a.external {
   color: #182024;
   box-shadow: 0 0.125rem 0.3rem 0 rgba(0, 0, 0, 0.16),
     0 0.125rem 0.3rem 0 rgba(0, 0, 0, 0.12);
-
   width: 12rem;
   margin: 0.5rem 0.125rem;
   padding: 0.5rem;
-
   transition: background-color 125ms linear;
 }
 
@@ -114,10 +112,6 @@ a.external:focus {
 a.external:hover,
 a.external:active {
   background: #fefefe;
-}
-
-a.external span.socicon {
-  margin-right: 1rem;
 }
 
 .hidden {
