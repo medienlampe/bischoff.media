@@ -12,6 +12,7 @@ dist/*
 !dist/assets/
 
 dist/assets/*
+!dist/assets/fonts/
 !dist/assets/pwa/
 !dist/assets/js/
 !dist/assets/img/

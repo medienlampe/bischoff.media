@@ -26,7 +26,7 @@ var PRECACHE_URLS = [
   "humans.txt",
   "assets/img/sb.webp",
   "assets/img/favicon.png",
-  "assets/css/app.min.css"
+  "assets/css/app.css"
 ];
 
 
