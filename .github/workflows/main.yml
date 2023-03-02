@@ -13,12 +13,14 @@ jobs:
         node-version: '16.x'
     - name: Install npm dependencies
       run: npm ci
+    - name: Run cache update task
+      run: npm run cache-update --if-present
     - name: Run build task
       run: npm run build --if-present
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.2
       with:
-        ftp-server: ${{ secrets.FTP_SERVER }}
-        ftp-username: ${{ secrets.FTP_USER }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: dist
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/

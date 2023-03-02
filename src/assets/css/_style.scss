@@ -1,5 +1,5 @@
 html {
-  height: 100vh;
+  min-width: 320px;
 }
 
 body {
@@ -12,12 +12,11 @@ body {
   word-spacing: 0.25rem;
   background: #37474f;
   color: #cfd8dc;
-  height: 100vh;
   margin: 0;
 }
 
 main {
-  padding-bottom: 3rem;
+  padding: 0 1rem 3rem;
   flex: 1;
 }
 
@@ -53,6 +52,7 @@ img.u-photo {
     0% 70%,
     0% 30%
   );
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -101,7 +101,6 @@ a.external {
   width: 12rem;
   margin: 0.5rem 0.125rem;
   padding: 0.5rem;
-  transition: background-color 125ms linear;
 }
 
 a.external:focus {
@@ -134,8 +133,7 @@ a.external:active {
   font-weight: 400;
   font-size: 1.5rem;
   background: #b0bec5;
-  margin-top: -17rem;
-  padding: 19rem 0 3rem;
+  padding: 3rem 0 3rem;
 }
 
 #welcome p {
