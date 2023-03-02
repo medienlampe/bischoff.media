@@ -7,7 +7,7 @@ dist/*
 !dist/ror.xml
 !dist/sitemap.xml
 !dist/sitemap.xml.gz
-!dist/sw.js
+!dist/sw.sample.js
 !dist/urllist.txt
 !dist/assets/
 
