@@ -1,12 +1,13 @@
 {
   "name": "bischoff.media",
+  "type": "module",
   "version": "3.1.0",
   "description": "bischoff.media",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0",
-    "eleventy-sass": "^2.2.1",
-    "jest": "^29.4.3",
-    "sass": "^1.58.3"
+    "@11ty/eleventy": "^3.0.0",
+    "eleventy-sass": "^3.0.0-beta.0",
+    "jest": "^29.7.0",
+    "sass": "^1.83.4"
   },
   "scripts": {
     "start": "eleventy --watch --serve",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/medienlampe/bischoff.media/issues"
   },
-  "homepage": "https://github.com/medienlampe/bischoff.media#readme"
+  "homepage": "https://github.com/medienlampe/bischoff.media#readme",
+  "dependencies": {
+    "@11ty/eleventy-upgrade-help": "^3.0.1"
+  }
 }
