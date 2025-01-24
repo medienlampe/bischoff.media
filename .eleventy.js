@@ -1,7 +1,7 @@
-const eleventySass = require("eleventy-sass");
+import eleventySass from "eleventy-sass";
+import UpgradeHelper from "@11ty/eleventy-upgrade-help";
 
-
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventySass, {
     compileOptions: {
       permalink: function(contents, inputPath) {
