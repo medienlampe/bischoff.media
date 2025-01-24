@@ -11,14 +11,14 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '22.x'
-    - name: Install npm dependencies
+    - name: 🚚 Install Dependencies...
       run: npm ci
-    - name: Run cache update task
+    - name: 📂 Update Cache...
       run: npm run cache-update --if-present
-    - name: Run build task
+    - name: 🎉 Build...
       run: npm run build --if-present
-    - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.3.5
+    - name: 🚀 Deploy...
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USER }}
