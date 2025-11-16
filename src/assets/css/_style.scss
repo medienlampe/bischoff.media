@@ -27,20 +27,6 @@ a:visited {
 }
 
 img.u-photo {
-  height: auto;
-  /**
-    * border-radius: 100%;
-    */
-  -webkit-clip-path: polygon(
-    30% 0%,
-    70% 0%,
-    100% 30%,
-    100% 70%,
-    70% 100%,
-    30% 100%,
-    0% 70%,
-    0% 30%
-  );
   clip-path: polygon(
     30% 0%,
     70% 0%,
@@ -144,4 +130,5 @@ a.external:active {
 
 #linked-profiles {
   padding: 3rem 0;
+
 }
