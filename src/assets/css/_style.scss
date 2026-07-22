@@ -132,3 +132,9 @@ a.external:active {
   padding: 3rem 0;
 
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
