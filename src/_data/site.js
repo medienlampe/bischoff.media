@@ -13,5 +13,20 @@ export default {
     "https://www.xing.com/profile/Sven_Bischoff10",
     "https://de.linkedin.com/in/svenbischoff",
     "https://steamcommunity.com/id/multigeneris"
-  ]
+  ],
+  knowsAbout: [
+    "Team-Führung",
+    "Konfliktmanagement",
+    "Webentwicklung",
+    "IT-Infrastruktur",
+    "Fotografie"
+  ],
+  knowsAboutEnglish: [
+    "Team Leadership",
+    "Conflict Management",
+    "Web Development",
+    "IT Infrastructure",
+    "Photography"
+  ],
+  knowsLanguage: ["de", "en"]
 };
