@@ -1,0 +1,20 @@
+# Sven Bischoff
+
+> Personal website of Sven Bischoff, a software developer and tech lead from Leipzig, Germany. Currently Senior Engineering Manager for the "Book" and "App" clusters in the e-commerce division at Invia Travel Germany GmbH, working on ab-in-den-urlaub.de and other travel portals.
+
+Sven's background is in full-stack web development, spanning frontend code, web servers, operating systems, and hardware, as well as automation, backups, virtualization, and containers. He holds a B.Sc. in Medieninformatik (Media Informatics). Outside of work he is interested in gaming, photography, music, science, and DIY.
+
+## Pages
+
+- [Home (German)](https://bischoff.media/): About page in German, professional background and interests
+- [Home (English)](https://bischoff.media/english.html): About page in English
+- [Impressum](https://bischoff.media/impressum.html): German legal notice / site operator disclosure
+- [Datenschutz](https://bischoff.media/datenschutz.html): German privacy policy
+
+## Profiles
+
+- [GitHub](https://github.com/medienlampe): Code and open-source projects
+- [Photography](https://bischoff.photo): Photography portfolio
+- [Printables](https://www.printables.com/de/social/339997-medienlampe/about): 3D-printable design models
+- [LinkedIn](https://de.linkedin.com/in/svenbischoff): Professional profile
+- [XING](https://www.xing.com/profile/Sven_Bischoff10): Professional profile
