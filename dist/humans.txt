@@ -1,8 +1,7 @@
 
 /* TEAM */      
-Developer: Sven Bischoff                   
-Site: https://bischoff.media            
-Twitter: @TheTalesOfImmo
+Developer: Sven Bischoff
+Site: https://bischoff.media
 Location: Leipzig, Germany
 
 /* SITE */
