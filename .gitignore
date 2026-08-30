@@ -2,6 +2,7 @@
 dist/*
 !dist/.htaccess
 !dist/humans.txt
+!dist/llms.txt
 !dist/manifest.json
 !dist/robots.txt
 !dist/ror.xml
