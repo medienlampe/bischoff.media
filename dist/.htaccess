@@ -475,7 +475,7 @@ AddDefaultCharset utf-8
 # https://w3c.github.io/webappsec-csp/
 
 <IfModule mod_headers.c>
-    Header always set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+    Header always set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
 </IfModule>
 
 # <IfModule mod_headers.c>
