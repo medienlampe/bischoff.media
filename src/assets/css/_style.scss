@@ -114,23 +114,43 @@ a.external:active {
 #welcome {
   color: #182024;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  word-spacing: normal;
   background: #b0bec5;
-  padding: 3rem 0 3rem;
+  padding: 2.5rem 1rem;
 }
 
-#welcome p {
+#welcome p,
+#welcome ul {
   text-align: left;
-  max-width: 60rem;
-  margin: 1rem auto;
-  padding: 0 2rem;
+  max-width: 48rem;
+  margin: 0 auto 0.9em;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+#welcome p.lead {
+  font-weight: 500;
+}
+
+#welcome p:last-of-type {
+  margin-bottom: 0;
 }
 
 #welcome ul {
-  text-align: left;
-  max-width: 58rem;
-  margin: 1rem auto;
-  padding: 0 2rem 0 4rem;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+
+#welcome li + li {
+  margin-top: 0.25em;
+}
+
+#welcome a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 #linked-profiles {
