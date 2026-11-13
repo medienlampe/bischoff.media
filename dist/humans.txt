@@ -1,10 +1,11 @@
 
-/* TEAM */      
+/* TEAM */
 Developer: Sven Bischoff
 Site: https://bischoff.media
 Location: Leipzig, Germany
 
 /* SITE */
+Last update: 2026-11-13
 Standards: HTML5, CSS3, WCAG 2.0 AA
-Components: Materialize, .htaccess by h5bp             
-Software: Sublime Text 3
+Components: Eleventy, Sass, .htaccess by h5bp
+Software: Visual Studio Code

@@ -2,7 +2,7 @@
 
 > Personal website of Sven Bischoff, a software developer and tech lead from Leipzig, Germany. Currently Senior Engineering Manager for the "Book" and "App" clusters in the e-commerce division at Invia Travel Germany GmbH, working on ab-in-den-urlaub.de and other travel portals.
 
-Sven's background is in full-stack web development, spanning frontend code, web servers, operating systems, and hardware, as well as automation, backups, virtualization, and containers. He holds a B.Sc. in Medieninformatik (Media Informatics). Outside of work he is interested in gaming, photography, music, science, and DIY.
+Sven's background is in full-stack web development, spanning frontend code, web servers, operating systems, and hardware, as well as automation, backups, virtualization, containers, and, more recently, AI. He holds a B.Sc. in Medieninformatik (Media Informatics). Outside of work he is interested in local AI inference, gaming, photography, music, science, and DIY.
 
 ## Pages
 
