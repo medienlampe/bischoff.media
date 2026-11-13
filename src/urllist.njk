@@ -1,0 +1,6 @@
+---
+permalink: urllist.txt
+eleventyExcludeFromCollections: true
+---
+{% for item in collections.indexable %}{{ site.url }}{{ item.url }}
+{% endfor %}

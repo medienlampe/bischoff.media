@@ -5,11 +5,7 @@ dist/*
 !dist/llms.txt
 !dist/manifest.json
 !dist/robots.txt
-!dist/ror.xml
-!dist/sitemap.xml
-!dist/sitemap.xml.gz
-!dist/sw.sample.js
-!dist/urllist.txt
+!dist/sw.js
 !dist/assets/
 
 dist/assets/*

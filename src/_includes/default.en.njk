@@ -2,19 +2,19 @@
 <html lang="en">
   {% include "templates/header.en.njk" %}
   <body>
-    <!--<a href="#main">Jump to main content</a>-->
+    <a href="#main" class="skip-link">Jump to main content</a>
     <main id="main" class="h-card">
       <h1 class="p-name">{{ note | safe }}</h1>
       <h2 class="p-note">
         {{ name | safe}}
       </h2>
-      <a href="/" title="Go to homepage">
+      <a href="/english.html" title="Go to homepage">
         <img
           class="u-photo"
           width="333"
           height="333"
           alt="Photo of Sven Bischoff, Senior Engineering Manager in Leipzig"
-          src="./assets/img/sb.webp"
+          src="/assets/img/sb.webp"
         />
       </a>
       <section id="welcome">
@@ -22,12 +22,6 @@
       </section>
     </main>
     {% include "templates/footer.en.njk" %}
-    <script>
-      navigator.serviceWorker &&
-        navigator.serviceWorker.register &&
-        !navigator.serviceWorker.controller &&
-        navigator.serviceWorker.register("sw.js", { scope: "./" });
-    </script>
   </body>
 </html>
 

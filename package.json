@@ -12,8 +12,7 @@
   "scripts": {
     "start": "eleventy --watch --serve",
     "build": "eleventy",
-    "cache-update": "mv dist/sw.sample.js dist/sw.js && sed -i \"s/{version}/$(date +\"%Y%m%d%H%M%S\")/\" dist/sw.js",
-    "test": "jest"
+    "test": "eleventy && jest"
   },
   "repository": {
     "type": "git",
@@ -24,8 +23,5 @@
   "bugs": {
     "url": "https://github.com/medienlampe/bischoff.media/issues"
   },
-  "homepage": "https://github.com/medienlampe/bischoff.media#readme",
-  "dependencies": {
-    "@11ty/eleventy-upgrade-help": "^3.0.2"
-  }
+  "homepage": "https://github.com/medienlampe/bischoff.media#readme"
 }

@@ -2,7 +2,7 @@
 <html lang="de">
   {% include "templates/header.njk" %}
   <body>
-    <!--<a href="#main">Zum Hauptinhalt springen</a>-->
+    <a href="#main" class="skip-link">Zum Hauptinhalt springen</a>
     <main id="main" class="h-card">
       <h1 class="p-name">{{ note | safe }}</h1>
       <h2 class="p-note">
@@ -15,19 +15,13 @@
           height="333"
           fetchpriority="high"
           alt="Foto von Sven Bischoff, Senior Engineering Manager in Leipzig"
-          src="./assets/img/sb.webp"
+          src="/assets/img/sb.webp"
       /></a>
       <section id="welcome">
         {{ content | safe }}
       </section>
     </main>
     {% include "templates/footer.njk" %}
-    <script>
-      navigator.serviceWorker &&
-        navigator.serviceWorker.register &&
-        !navigator.serviceWorker.controller &&
-        navigator.serviceWorker.register("sw.js", { scope: "./" });
-    </script>
   </body>
 </html>
 

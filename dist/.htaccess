@@ -85,7 +85,7 @@
 # Customize what Apache returns to the client in case of an error.
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
-ErrorDocument 404 https://bischoff.media
+ErrorDocument 404 /404.html
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |
@@ -474,6 +474,10 @@ AddDefaultCharset utf-8
 # http://www.html5rocks.com/en/tutorials/security/content-security-policy/
 # https://w3c.github.io/webappsec-csp/
 
+<IfModule mod_headers.c>
+    Header always set Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+</IfModule>
+
 # <IfModule mod_headers.c>
 
 #     Header set Content-Security-Policy "script-src 'self'; object-src 'self'"
@@ -581,9 +585,9 @@ AddDefaultCharset utf-8
 # https://tools.ietf.org/html/draft-ietf-websec-strict-transport-sec-14#section-6.1
 # http://blogs.msdn.com/b/ieinternals/archive/2014/08/18/hsts-strict-transport-security-attacks-mitigations-deployment-https.aspx
 
-# <IfModule mod_headers.c>
-#     Header always set Strict-Transport-Security "max-age=16070400; includeSubDomains"
-# </IfModule>
+<IfModule mod_headers.c>
+    Header always set Strict-Transport-Security "max-age=31536000"
+</IfModule>
 
 # ----------------------------------------------------------------------
 # | Reducing MIME type security risks                                  |
