@@ -682,15 +682,17 @@ a:hover {
   font-weight: 600;
 }
 
-.prose h3 {
+.prose h2 {
   font-size: 1.35rem;
 }
 
+.prose h3,
 .prose h4 {
   font-size: 1.1rem;
 }
 
-.prose h4:empty {
+// The privacy policy has empty anchor headings; hide them.
+.prose :is(h2, h3, h4):empty {
   display: none;
 }
 
