@@ -1,0 +1,17 @@
+<section id="linked-profiles" class="section" aria-labelledby="profiles-title">
+  <h2 id="profiles-title">{{ "Profile" if lang == "de" else "Profiles" }}</h2>
+  <ul class="profile-links">
+    {%- for profile in profiles %}
+    <li>
+      <a
+        href="{{ profile.url }}"
+        title="{{ profile.title[lang] }}"
+        class="profile-link"
+        rel="me noopener noreferrer"
+        ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"
+          {%- if profile.stroke %} fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"{% else %} fill="currentColor"{% endif %}>{{ profile.icon | safe }}</svg>{{ profile.label[lang] }}</a
+      >
+    </li>
+    {%- endfor %}
+  </ul>
+</section>

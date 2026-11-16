@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include "templates/header.en.njk" %}
+  {% set lang = "en" %}
   <body>
     <a href="#main" class="skip-link">Jump to main content</a>
+    {% if hero %}
     <main id="main" class="h-card">
-      <h1 class="p-name">{{ note | safe }}</h1>
-      <h2 class="p-note">
-        {{ name | safe}}
-      </h2>
-      <a href="/english.html" title="Go to homepage">
+      <a href="{{ site.url }}" rel="me" class="u-url hidden">{{ site.url }}</a>
+      <section class="hero container">
         <img
-          class="u-photo"
+          class="u-photo hero-photo"
           width="333"
           height="333"
+          fetchpriority="high"
           alt="Photo of Sven Bischoff, Senior Engineering Manager in Leipzig"
           src="/assets/img/sb.webp"
         />
-      </a>
-      <section id="welcome">
-        {{ content | safe }}
+        <div class="hero-text">
+          <p class="whoami" aria-hidden="true"><span class="whoami-cmd">whoami</span></p>
+          <h1 class="p-name">Sven Bischoff</h1>
+          <p class="role"><span class="p-job-title">Senior Engineering Manager</span> from <span class="p-locality">Leipzig</span></p>
+          <p class="p-note tagline">{{ tagline | safe }}</p>
+          <a
+            href="mailto:info@bischoff.media?subject=Contact"
+            title="Contact Sven Bischoff via e-mail"
+            class="u-email button"
+            rel="me"
+            ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>Get in touch</a
+          >
+        </div>
       </section>
+      <div class="container">
+        {{ content | safe }}
+        {% include "templates/profiles.njk" %}
+      </div>
     </main>
+    {% else %}
+    <header class="site-header container">
+      <a href="/english.html" class="site-name">Sven Bischoff</a>
+    </header>
+    <main id="main" class="container">
+      <h1 class="page-title">{{ note | safe }}</h1>
+      {% if name %}<p class="page-subtitle">{{ name | safe }}</p>{% endif %}
+      <div class="prose">
+        {{ content | safe }}
+      </div>
+    </main>
+    {% endif %}
     {% include "templates/footer.en.njk" %}
   </body>
 </html>
-

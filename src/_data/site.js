@@ -3,9 +3,9 @@ export default {
   name: "Sven Bischoff",
   image: "/assets/img/sb.webp",
   description:
-    "Sven Bischoff ist Senior Engineering Manager bei der Invia Travel Germany GmbH (ab-in-den-urlaub.de) in Leipzig, mit Fokus auf die Entwicklung seiner Teams. Persönliche Website mit Profilen bei GitHub, Fotografie, Printables, XING und LinkedIn.",
+    "Sven Bischoff ist Senior Engineering Manager bei der ab in den urlaub GmbH (Wirtualna Polska Gruppe) in Leipzig und kümmert sich mit seinen Teams um die Buchungsstrecke und die Apps von ab-in-den-urlaub.de. Persönliche Website mit Profilen bei LinkedIn, GitHub, Fotografie, Printables, XING und Steam.",
   descriptionEnglish:
-    "Sven Bischoff is a Senior Engineering Manager at Invia Travel Germany GmbH (ab-in-den-urlaub.de) in Leipzig, Germany, focused on developing his teams. Personal site with links to his GitHub, photography, Printables, XING and LinkedIn profiles.",
+    "Sven Bischoff is a Senior Engineering Manager at ab in den urlaub GmbH (Wirtualna Polska Group) in Leipzig, Germany. Together with his teams he takes care of the booking flow and the apps of ab-in-den-urlaub.de. Personal site with links to his LinkedIn, GitHub, photography, Printables, XING and Steam profiles.",
   sameAs: [
     "https://github.com/medienlampe",
     "https://bischoff.photo",
@@ -15,18 +15,24 @@ export default {
     "https://steamcommunity.com/id/multigeneris"
   ],
   knowsAbout: [
-    "Team-Führung",
+    "Teamführung",
     "Konfliktmanagement",
+    "Mental Health First Aid",
     "Webentwicklung",
-    "IT-Infrastruktur",
-    "Fotografie"
+    "Self-Hosting",
+    "Künstliche Intelligenz",
+    "Fotografie",
+    "3D-Design"
   ],
   knowsAboutEnglish: [
-    "Team Leadership",
-    "Conflict Management",
-    "Web Development",
-    "IT Infrastructure",
-    "Photography"
+    "Leading teams",
+    "Conflict management",
+    "Mental Health First Aid",
+    "Web development",
+    "Self-hosting",
+    "Artificial intelligence",
+    "Photography",
+    "3D design"
   ],
   knowsLanguage: ["de", "en"]
 };

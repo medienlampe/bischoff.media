@@ -1,8 +1,28 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import eleventySass from "eleventy-sass";
+import Image from "@11ty/eleventy-img";
 
 export default function(eleventyConfig) {
+  // Responsive <picture> for content images: AVIF + WebP in a few widths,
+  // metadata stripped (sharp default). Output is generated, not committed.
+  // Usage: {% image "src/assets/img/foo.jpg", "Alt text", "(min-width: 60rem) 30rem, 100vw" %}
+  eleventyConfig.addShortcode("image", async (src, alt, sizes) => {
+    if (!alt) throw new Error(`Missing alt text for ${src}`);
+    const metadata = await Image(src, {
+      widths: [480, 960, 1440],
+      formats: ["avif", "webp"],
+      outputDir: "dist/assets/img/gen/",
+      urlPath: "/assets/img/gen/"
+    });
+    return Image.generateHTML(metadata, {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async"
+    });
+  });
+
   eleventyConfig.addPlugin(eleventySass, {
     compileOptions: {
       permalink: function(contents, inputPath) {

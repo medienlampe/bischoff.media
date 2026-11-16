@@ -52,6 +52,46 @@ describe.each(Object.entries(pages))("%s", (file, page) => {
       expect([ref, fs.existsSync(path.join(dist, target))]).toEqual([ref, true]);
     });
   });
+
+  test("srcset images exist", () => {
+    const sets = [...html.matchAll(/srcset="([^"]+)"/g)].map((m) => m[1]);
+    sets.flatMap((set) => set.split(",").map((s) => s.trim().split(/\s+/)[0])).forEach((ref) => {
+      expect([ref, fs.existsSync(path.join(dist, ref.slice(1)))]).toEqual([ref, true]);
+    });
+  });
+
+  test("every image has alt text and dimensions", () => {
+    const imgs = html.match(/<img\b[^>]*>/g) || [];
+    imgs.forEach((tag) => {
+      expect([tag, /\salt="[^"]+"/.test(tag)]).toEqual([tag, true]);
+      expect([tag, /\swidth="\d+"/.test(tag) && /\sheight="\d+"/.test(tag)]).toEqual([tag, true]);
+    });
+  });
+
+  test("the photo does not link to the page itself", () => {
+    expect(html).not.toMatch(/<a\b[^>]*>\s*<img\b[^>]*u-photo/);
+  });
+
+  test("language switcher names each language in itself", () => {
+    expect(html).toMatch(/lang="de"[^>]*>Deutsch</);
+    expect(html).toMatch(/lang="en"[^>]*>English</);
+    expect(html).not.toContain(">Englisch<");
+    expect(html).not.toContain(">German<");
+  });
+});
+
+test("the CSP allows the self-hosted font", () => {
+  const csp = read(".htaccess").match(/Content-Security-Policy "([^"]+)"/)[1];
+  expect(csp).toContain("font-src 'self'");
+  expect(csp).toContain("default-src 'none'");
+});
+
+test("fonts referenced by the stylesheet exist", () => {
+  const urls = [...read("assets/css/app.css").matchAll(/url\("?(\/[^")]+)"?\)/g)].map((m) => m[1]);
+  expect(urls.length).toBeGreaterThan(0);
+  urls.forEach((url) => {
+    expect([url, fs.existsSync(path.join(dist, url.slice(1)))]).toEqual([url, true]);
+  });
 });
 
 test("JSON-LD on the home pages is valid", () => {
