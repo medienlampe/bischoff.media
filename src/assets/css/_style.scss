@@ -133,6 +133,10 @@ a:hover {
   border-radius: 0.25rem;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .icon {
   width: 1.15em;
   height: 1.15em;
@@ -301,8 +305,10 @@ a:hover {
 }
 
 // ---- Bento ----------------------------------------------------------------
-// Phone: one column. Tablet: two, intro and wide tiles span both.
-// Desktop: six tracks: intro 4 + one tile 2, then 2 + 2 + 2, then wide 6.
+// Phone: one column. Tablet: two, intro and interests span both.
+// Desktop: six tracks, rows paired by content height:
+//   intro 4 + studium 2 | leadership 3 + tech 3 | history 4 + interests 2 |
+//   photo 3 + lantern 3
 
 .bento {
   display: grid;
@@ -315,7 +321,7 @@ a:hover {
   }
 
   .tile-intro,
-  .tile-wide {
+  .tile-interests {
     grid-column: 1 / -1;
   }
 }
@@ -325,20 +331,19 @@ a:hover {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  .tile {
+  .tile,
+  .tile-interests {
     grid-column: span 2;
   }
 
-  .tile-intro {
+  .tile-intro,
+  .tile-begin {
     grid-column: span 4;
   }
 
-  .tile-begin, .tile-leadership {
-    grid-column: span 2;
-  }
-
-  .tile-wide {
-    grid-column: 1 / -1;
+  .tile-leadership,
+  .tile-tech {
+    grid-column: span 3;
   }
 }
 
@@ -349,6 +354,7 @@ a:hover {
   background: var(--surface);
   hyphens: auto;
   -webkit-hyphens: auto;
+  hyphenate-limit-chars: 12 5 5;
   overflow-wrap: break-word;
 }
 
@@ -471,16 +477,16 @@ a:hover {
 
 // Dot centre sits at (0.4rem, 0.75rem). Each item draws the line from its
 // own dot centre down to the next one, so it never sticks out at either end.
-.timeline li {
+.timeline > li {
   position: relative;
   padding: 0 0 2rem 2.4rem;
 }
 
-.timeline li:last-child {
+.timeline > li:last-child {
   padding-bottom: 0;
 }
 
-.timeline li:not(:last-child)::after {
+.timeline > li:not(:last-child)::after {
   content: "";
   position: absolute;
   left: calc(0.4rem - 1px);
@@ -490,7 +496,7 @@ a:hover {
   background: var(--border);
 }
 
-.timeline li::before {
+.timeline > li::before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -503,7 +509,7 @@ a:hover {
   border: 2px solid var(--muted);
 }
 
-.timeline li.is-current::before {
+.timeline > li.is-current::before {
   background: var(--accent);
   border-color: var(--accent);
   box-shadow: 0 0 0 4px var(--accent-soft);
@@ -528,37 +534,18 @@ a:hover {
   color: var(--muted);
 }
 
-// ---- Cards ----------------------------------------------------------------
-
-.cards {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
-}
-
-.card {
-  padding: 1.5rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: var(--surface);
-  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow);
-  border-color: var(--accent);
-}
-
-.card h3 {
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.card p {
-  margin: 0;
+.timeline-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
   color: var(--muted);
+}
+
+.timeline-list li + li {
+  margin-top: 0.25rem;
+}
+
+.timeline-list strong {
+  color: var(--text);
 }
 
 // ---- Chips ----------------------------------------------------------------
@@ -617,10 +604,20 @@ a:hover {
 .profile-links {
   display: grid;
   gap: 0.75rem;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr));
+  grid-template-columns: repeat(2, 1fr);
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 40rem) {
+  .profile-links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.profiles-contact {
+  margin: 2rem 0 0;
 }
 
 .profile-link {

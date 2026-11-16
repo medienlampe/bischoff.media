@@ -14,4 +14,12 @@
     </li>
     {%- endfor %}
   </ul>
+  <p class="profiles-contact">
+    <a
+      href="mailto:info@bischoff.media?subject={{ "Kontakt" if lang == "de" else "Contact" }}"
+      title="{{ "Kontaktiere Sven Bischoff via E-Mail" if lang == "de" else "Contact Sven Bischoff via e-mail" }}"
+      class="button"
+      ><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>{{ "Kontakt aufnehmen" if lang == "de" else "Get in touch" }}</a
+    >
+  </p>
 </section>

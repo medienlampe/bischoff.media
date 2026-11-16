@@ -5,7 +5,7 @@ title: Sven Bischoff | Senior Engineering Manager
 description: "Sven Bischoff is a Senior Engineering Manager at ab in den urlaub GmbH (Wirtualna Polska Group) in Leipzig, Germany. Together with his teams he takes care of the booking flow and the apps of ab-in-den-urlaub.de. Personal site with links to his LinkedIn, GitHub, photography, Printables, XING and Steam profiles."
 alternateUrl: /
 permalink: english.html
-tagline: Together with my teams I'm taking care of the booking flow and the apps of ab-in-den-urlaub.de.
+tagline: Together with my teams I'm taking care of the booking flow and the apps of <span class="nowrap">ab-in-den-urlaub.de</span>.
 ---
 
 <section id="about" class="section" aria-labelledby="about-title">
@@ -45,16 +45,6 @@ tagline: Together with my teams I'm taking care of the booking flow and the apps
         <li>Mental Health First Aid</li>
       </ul>
     </div>
-    <div class="tile tile-begin">
-      <h3><span class="cmd" aria-hidden="true">history</span><span class="visually-hidden">How it started</span></h3>
-      <p>
-        It started with a modding website I ran together with friends. That's
-        how I taught myself PHP and discovered my joy in graphic design. Later
-        the site moved to its own root server running Windows Server, which was
-        kind of meh. Later we switched to Linux and I've loved Unix(-likes) and
-        working in the terminal ever since.
-      </p>
-    </div>
     <div class="tile tile-tech">
       <h3><span class="cmd" aria-hidden="true">diff then now</span><span class="visually-hidden">Tech</span></h3>
       <p class="chip-label">Back then</p>
@@ -74,17 +64,19 @@ tagline: Together with my teams I'm taking care of the booking flow and the apps
         <li>3-2-1 backups</li>
       </ul>
     </div>
-    <a class="tile tile-image" href="https://bischoff.photo" rel="noopener noreferrer">
-      {% image "src/assets/img/cyanotypie-hochsitz.jpg", "Cyanotype of a hunting stand between trees at the edge of a forest, printed in blue on paper", "(min-width: 60rem) 30rem, (min-width: 40rem) 50vw, 100vw" %}
-      <span class="tile-image-label">Photography · Cyanotype<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
-    </a>
-    <a class="tile tile-image tile-image-lantern" href="https://www.printables.com/de/social/339997-medienlampe/about" rel="noopener noreferrer">
-      {% image "src/assets/img/laternen.webp", "Two self-designed, 3D-printed Minecraft-style lanterns glowing yellow, with a Blåhaj plush shark behind them", "(min-width: 60rem) 30rem, (min-width: 40rem) 50vw, 100vw" %}
-      <span class="tile-image-label">3D printing · Own design<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
-    </a>
-    <div class="tile tile-wide">
+    <div class="tile tile-begin">
+      <h3><span class="cmd" aria-hidden="true">history</span><span class="visually-hidden">How it started</span></h3>
+      <p>
+        It started with a modding website I ran together with friends. That's
+        how I taught myself PHP and discovered my joy in graphic design. Later
+        the site moved to its own root server running Windows Server, which was
+        kind of meh. Not even a year later we switched to Linux. Since then
+        I've loved Unix(-likes) and working in the terminal.
+      </p>
+    </div>
+    <div class="tile tile-interests">
       <h3><span class="cmd" aria-hidden="true">ls ~/interests</span><span class="visually-hidden">Interests</span></h3>
-      <ul class="chips">
+      <ul class="chips chips-small">
         <li>Local AI inference</li>
         <li>Photography</li>
         <li>3D design &amp; printing</li>
@@ -94,6 +86,14 @@ tagline: Together with my teams I'm taking care of the booking flow and the apps
         <li>Do-it-yourself</li>
       </ul>
     </div>
+    <a class="tile tile-image" href="https://bischoff.photo" rel="noopener noreferrer">
+      {% image "src/assets/img/cyanotypie-hochsitz.jpg", "Cyanotype of a hunting stand between trees at the edge of a forest, printed in blue on paper", "(min-width: 60rem) 30rem, (min-width: 40rem) 50vw, 100vw" %}
+      <span class="tile-image-label">Photography · Cyanotype<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    </a>
+    <a class="tile tile-image tile-image-lantern" href="https://www.printables.com/de/social/339997-medienlampe/about" rel="noopener noreferrer">
+      {% image "src/assets/img/laternen.webp", "Two self-designed, 3D-printed Minecraft-style lanterns glowing yellow, with a Blåhaj plush shark behind them", "(min-width: 60rem) 30rem, (min-width: 40rem) 50vw, 100vw" %}
+      <span class="tile-image-label">3D printing · Own design<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+    </a>
   </div>
 </section>
 
@@ -120,43 +120,25 @@ tagline: Together with my teams I'm taking care of the booking flow and the apps
       <span class="timeline-date">since 2024</span>
       <h3>Senior Engineering Manager</h3>
       <p>
-        Responsible for the booking flow and the apps of ab-in-den-urlaub.de and
+        Responsible for the booking flow and the apps of <span class="nowrap">ab-in-den-urlaub.de</span> and
         several other travel portals. I'm supported by four great people: three
         Engineering Managers and an IT Architect.
       </p>
+      <ul class="timeline-list">
+        <li><strong>Cluster Book</strong> covers the booking steps, the post-sales services and the login.</li>
+        <li><strong>Cluster App</strong> covers the complete user journey in our iOS and Android apps.</li>
+      </ul>
     </li>
     <li>
-      <span class="timeline-date">2021</span>
-      <h3>Team Lead IT Development</h3>
-      <p>Team lead and software development for the booking funnel of ab-in-den-urlaub.de.</p>
-    </li>
-    <li>
-      <span class="timeline-date">2019</span>
-      <h3>Lead Software Engineer</h3>
-    </li>
-    <li>
-      <span class="timeline-date">2017</span>
-      <h3>Technical Product Owner</h3>
-      <p>Technical team lead and software development for the booking funnel of ab-in-den-urlaub.de.</p>
+      <span class="timeline-date">2017 / 2019 / 2021</span>
+      <h3>Technical Product Owner → Lead Software Engineer → Team Lead IT Development</h3>
+      <p>(Initially technical) team lead and software development for the booking funnel of <span class="nowrap">ab-in-den-urlaub.de</span>.</p>
     </li>
     <li>
       <span class="timeline-date">2015</span>
       <h3>Junior Software Developer</h3>
-      <p>Frontend developer for ab-in-den-urlaub.de.</p>
+      <p>Frontend developer for <span class="nowrap">ab-in-den-urlaub.de</span>.</p>
     </li>
   </ol>
 </section>
 
-<section id="clusters" class="section" aria-labelledby="clusters-title">
-  <h2 id="clusters-title">My departments</h2>
-  <div class="cards">
-    <article class="card">
-      <h3>Cluster Book</h3>
-      <p>Covers the booking steps, the post-sales services and the login.</p>
-    </article>
-    <article class="card">
-      <h3>Cluster App</h3>
-      <p>Covers the complete user journey in our iOS and Android apps.</p>
-    </article>
-  </div>
-</section>
