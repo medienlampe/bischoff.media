@@ -2,6 +2,10 @@ export default {
   url: "https://bischoff.media",
   name: "Sven Bischoff",
   image: "/assets/img/sb.webp",
+  // Link preview card (Open Graph / Twitter), template in tools/social-card.html
+  socialImage: "/assets/img/social-card.jpg",
+  socialImageAlt: "Sven Bischoff, Senior Engineering Manager aus Leipzig – bischoff.media",
+  socialImageAltEnglish: "Sven Bischoff, Senior Engineering Manager from Leipzig – bischoff.media",
   description:
     "Sven Bischoff ist Senior Engineering Manager bei der ab in den urlaub GmbH (Wirtualna Polska Gruppe) in Leipzig und kümmert sich mit seinen Teams um die Buchungsstrecke und die Apps von ab-in-den-urlaub.de. Persönliche Website mit Profilen bei LinkedIn, GitHub, Fotografie, Printables, XING und Steam.",
   descriptionEnglish:

@@ -155,3 +155,18 @@ test("manifest icons exist", () => {
 test("the old service worker gets removed", () => {
   expect(read("sw.js")).toContain("registration.unregister()");
 });
+
+test("the link preview image exists and has the declared size", async () => {
+  const sharp = require("sharp");
+  for (const file of Object.keys(pages)) {
+    const html = read(file);
+    const og = html.match(/property="og:image" content="([^"]+)"/)[1];
+    const tw = html.match(/name="twitter:image" content="([^"]+)"/)[1];
+    expect(tw).toBe(og);
+    expect(html).toContain('name="twitter:card" content="summary_large_image"');
+    const width = Number(html.match(/og:image:width" content="(\d+)"/)[1]);
+    const height = Number(html.match(/og:image:height" content="(\d+)"/)[1]);
+    const meta = await sharp(path.join(dist, og.replace(origin, ""))).metadata();
+    expect([file, meta.width, meta.height, meta.format]).toEqual([file, width, height, "jpeg"]);
+  }
+});
