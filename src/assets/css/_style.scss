@@ -744,11 +744,8 @@ a:hover {
     navigation: auto;
   }
 
-  // One entrance for the whole page, no staggered delays.
-  main,
-  .site-footer {
-    animation: rise 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
+  // No page fade-in: content that starts invisible does not count for
+  // Largest Contentful Paint, which cost the mobile Lighthouse score.
 
   .whoami-cmd {
     animation:
@@ -785,13 +782,6 @@ a:hover {
 @keyframes caret {
   50% {
     border-color: transparent;
-  }
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(1rem);
   }
 }
 

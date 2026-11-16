@@ -46,7 +46,7 @@ describe.each(Object.entries(pages))("%s", (file, page) => {
   });
 
   test("local links and assets exist", () => {
-    const refs = [...html.matchAll(/(?:href|src)="(\/[^"#]*)"/g)].map((m) => m[1]);
+    const refs = [...html.matchAll(/(?:href|src)="(\/[^"#?]*)/g)].map((m) => m[1]);
     refs.forEach((ref) => {
       const target = ref === "/" ? "index.html" : ref.slice(1);
       expect([ref, fs.existsSync(path.join(dist, target))]).toEqual([ref, true]);
@@ -65,6 +65,19 @@ describe.each(Object.entries(pages))("%s", (file, page) => {
     imgs.forEach((tag) => {
       expect([tag, /\salt="[^"]+"/.test(tag)]).toEqual([tag, true]);
       expect([tag, /\swidth="\d+"/.test(tag) && /\sheight="\d+"/.test(tag)]).toEqual([tag, true]);
+    });
+  });
+
+  test("the stylesheet URL is versioned, since it is cached for a year", () => {
+    expect(html).toMatch(/href="\/assets\/css\/app\.css\?v=[0-9a-f]{10}"/);
+  });
+
+  test("only the hero photo loads eagerly (LCP), all other images lazily", () => {
+    const imgs = html.match(/<img\b[^>]*>/g) || [];
+    imgs.forEach((tag) => {
+      const hero = tag.includes("u-photo");
+      expect([tag, /loading="eager"/.test(tag) && /fetchpriority="high"/.test(tag)]).toEqual([tag, hero]);
+      if (!hero) expect([tag, /loading="lazy"/.test(tag)]).toEqual([tag, true]);
     });
   });
 

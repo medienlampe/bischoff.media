@@ -8,14 +8,7 @@
     <main id="main" class="h-card">
       <a href="{{ site.url }}" rel="me" class="u-url hidden">{{ site.url }}</a>
       <section class="hero container">
-        <img
-          class="u-photo hero-photo"
-          width="333"
-          height="333"
-          fetchpriority="high"
-          alt="Photo of Sven Bischoff, Senior Engineering Manager in Leipzig"
-          src="/assets/img/sb.webp"
-        />
+        {% image "dist/assets/img/sb.webp", "Photo of Sven Bischoff, Senior Engineering Manager in Leipzig", "(min-width: 46rem) 20rem, 16rem", "u-photo hero-photo", true %}
         <div class="hero-text">
           <p class="whoami" aria-hidden="true"><span class="whoami-cmd">whoami</span></p>
           <h1 class="p-name">Sven Bischoff</h1>
